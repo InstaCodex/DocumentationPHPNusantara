@@ -171,7 +171,7 @@ echo Persentase::format(0.25);
 // Output: 25%
 ```
 
-### 11 PHP Native – Format Persentase
+### 12 PHP Native – Format Persentase
 
 ```php
 <?php
