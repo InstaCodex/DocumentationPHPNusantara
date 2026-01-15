@@ -12,17 +12,20 @@ use PHPNusantara\Formatter\Rupiah;
 
 echo Rupiah::format(1500000);
 // Output: Rp 1.500.000
+
 ```
 ### 2 PHP Native – Format Tanggal
 
 ```php
 <?php
 require __DIR__ . '/vendor/PHPNusantara/src/Formatter/Tanggal.php';
+require __DIR__ . '/vendor/PHPNusantara/src/App/Bulan.php';
 
 use PHPNusantara\Formatter\Tanggal;
 
-echo Tanggal::format('2026-01-15');
+echo Tanggal::indo('2026-01-15');
 // Output: 15 Januari 2026
+
 ```
 
 ### 3 PHP Native – Format Hari
@@ -41,12 +44,13 @@ echo Hari::format('2026-01-15');
 
 ```php
 <?php
-require __DIR__ . '/vendor/PHPNusantara/src/App/Terbilang.php';
+require __DIR__ . '/vendor/PHPNusantara/src/Formatter/Terbilang.php';
 
-use PHPNusantara\App\Terbilang;
+use PHPNusantara\Formatter\Terbilang;
 
-echo Terbilang::convert(1500000);
+echo Terbilang::buat(1500000);
 // Output: Satu Juta Lima Ratus Ribu
+
 ```
 
 ### 5 PHP Native – Format Angka Indonesia
@@ -59,6 +63,10 @@ use PHPNusantara\Formatter\Angka;
 
 echo Angka::format(1500000);
 // Output: 1.500.000
+
+echo Angka::singkat(1500000);
+// Output: 1.5 jt
+
 ```
 
 ### 6 PHP Native – Format Waktu Lengkap
@@ -66,11 +74,13 @@ echo Angka::format(1500000);
 ```php
 <?php
 require __DIR__ . '/vendor/PHPNusantara/src/Formatter/Waktu.php';
+require __DIR__ . '/vendor/PHPNusantara/src/App/Bulan.php';
 
 use PHPNusantara\Formatter\Waktu;
 
-echo Waktu::lengkap('2026-01-15 14:30:00');
-// Output: Kamis, 15 Januari 2026 14:30
+echo Waktu::tanggalJamIndo('2026-01-15 14:30:00');
+// Output: 15 Januari 2026 14:30
+
 ```
 
 ### 7 PHP Native – Format Sensor Email
@@ -82,11 +92,13 @@ require __DIR__ . '/vendor/PHPNusantara/src/Identity/Email.php';
 use PHPNusantara\Identity\Email;
 
 $email = 'PHPNusantara@gmail.com';
+
 echo Email::mask($email, 6);
-// Output: PHPNus******@gmail.com
+// Output: PHPNu******@gmail.com
+
 ```
 
-### 8 PHP Native – Format Judul
+### 8 PHP Native – Format Judul, Slug, Potong
 
 ```php
 <?php
@@ -95,33 +107,16 @@ require __DIR__ . '/vendor/PHPNusantara/src/Bahasa/StringHelper.php';
 use PHPNusantara\Bahasa\StringHelper;
 
 echo StringHelper::judul('belajar php nusantara');
-// Output: Belajar Php Nusantara
-```
-
-### 8 PHP Native – Format Slug
-
-```php
-<?php
-require __DIR__ . '/vendor/PHPNusantara/src/Bahasa/StringHelper.php';
-
-use PHPNusantara\Bahasa\StringHelper;
+// Belajar Php Nusantara
 
 echo StringHelper::slug('Belajar PHP Nusantara 2026!');
-// Output: belajar-php-nusantara-2026
-```
-
-### 8 PHP Native – Format Memperpendek Teks
-
-```php
-<?php
-require __DIR__ . '/vendor/PHPNusantara/src/Bahasa/StringHelper.php';
-
-use PHPNusantara\Bahasa\StringHelper;
+// belajar-php-nusantara-2026
 
 echo StringHelper::potong(
-    'PHPNusantara adalah library PHP untuk kebutuhan format Indonesia',30
+    'PHPNusantara adalah library PHP untuk kebutuhan format Indonesia', 30
 );
-// Output: PHPNusantara adalah library...
+// PHPNusantara adalah library...
+
 ```
 
 ### 9 PHP Native – Format Nama Bulan Indonesia
@@ -134,6 +129,7 @@ use PHPNusantara\App\Bulan;
 
 echo Bulan::nama(1);
 // Output: Januari
+
 ```
 
 ### 10 PHP Native – Format Response Helper
@@ -169,4 +165,5 @@ use PHPNusantara\Formatter\Persentase;
 
 echo Persentase::format(0.25);
 // Output: 25%
+
 ```
