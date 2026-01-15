@@ -170,15 +170,3 @@ use PHPNusantara\Formatter\Persentase;
 echo Persentase::format(0.25);
 // Output: 25%
 ```
-
-### 12 PHP Native – Format Persentase
-
-```php
-<?php
-require __DIR__ . '/vendor/PHPNusantara/src/Formatter/Persentase.php';
-
-use PHPNusantara\Formatter\Persentase;
-
-echo Persentase::format(0.25);
-// Output: 25%
-```
