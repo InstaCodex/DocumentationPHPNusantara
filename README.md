@@ -528,6 +528,100 @@ Email::mask('user@email.com');
 
 ```
 
+# 📞 Telepon Identity – PHPNusantara
+
+Library **Telepon** adalah bagian dari ekosistem **PHPNusantara** yang berfungsi untuk **validasi, normalisasi, dan masking nomor HP Indonesia** 🇮🇩.
+
+Cocok digunakan untuk:
+- Form pendaftaran
+- Sistem login berbasis nomor HP
+- Aplikasi kasir & UMKM
+- API backend (PHP Native, Laravel, CodeIgniter)
+
+---
+
+## ✨ Fitur
+
+- Validasi nomor HP Indonesia
+- Normalisasi format (`+62`, `62` → `08`)
+- Masking nomor HP (keamanan data)
+- Static method
+- Ringan & tanpa dependency
+
+---
+
+## 📂 Struktur File
+
+```text
+src/
+└── Identity/
+    └── Telepon.php
+```
+
+## 🚀 Cara Penggunaan PHP Native
+```php
+require 'vendor/PHPNusantara/src/Identity/Telepon.php';
+
+use PHPNusantara\Identity\Telepon;
+
+Telepon::valid('08123456789');
+// Output: true
+
+Telepon::normalize('+628123456789');
+// Output: 08123456789
+
+Telepon::mask('08123456789');
+// Output: 08123****789
+
+```
+
+# 🆔 NIK Identity – PHPNusantara
+
+Library **NIK** adalah bagian dari ekosistem **PHPNusantara** yang berfungsi untuk **validasi, masking, dan ekstraksi tanggal lahir dari Nomor Induk Kependudukan (KTP Indonesia)**.
+
+Cocok digunakan untuk:
+- Sistem akademik
+- Aplikasi pemerintahan
+- Sistem registrasi warga
+- Validasi data pengguna
+
+---
+
+## ✨ Fitur
+
+- Validasi NIK 16 digit
+- Deteksi tanggal lahir dari NIK
+- Masking NIK (keamanan data)
+- Static method
+- Tanpa dependency eksternal
+
+---
+
+## 📂 Struktur File
+
+```text
+src/
+└── Identity/
+    └── NIK.php
+```
+
+## 🚀 Cara Penggunaan PHP Native
+```php
+require 'vendor/PHPNusantara/src/Identity/NIK.php';
+
+use PHPNusantara\Identity\NIK;
+
+NIK::valid('3175091203980001');
+// Output: true
+
+NIK::mask('3175091203980001');
+// Output: 317509********01
+
+NIK::tanggalLahir('3175091203980001');
+// Output: 1998-03-12
+
+```
+
 
 
 
