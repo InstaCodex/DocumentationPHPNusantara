@@ -31,7 +31,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/App/Bulan.php';
+require __DIR__ . 'vendor/PHPNusantara/src/App/Bulan.php';
 
 use PHPNusantara\App\Bulan;
 
@@ -72,7 +72,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/App/Response.php';
+require __DIR__ . 'vendor/PHPNusantara/src/App/Response.php';
 
 use PHPNusantara\App\Response;
 
@@ -142,7 +142,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/App/WaktuRelatif.php';
+require __DIR__ . 'vendor/PHPNusantara/src/App/WaktuRelatif.php';
 
 use PHPNusantara\App\WaktuRelatif;
 
@@ -182,7 +182,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Bahasa/StringHelper.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Bahasa/StringHelper.php';
 
 use PHPNusantara\Bahasa\StringHelper;
 
@@ -229,7 +229,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Formatter/Angka.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Angka.php';
 
 use PHPNusantara\Formatter\Angka;
 
@@ -276,7 +276,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Formatter/Persentase.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Persentase.php';
 
 use PHPNusantara\Formatter\Persentase;
 
@@ -324,7 +324,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Formatter/Rupiah.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Rupiah.php';
 
 use PHPNusantara\Formatter\Rupiah;
 
@@ -377,8 +377,8 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/App/Bulan.php';
-require 'vendor/PHPNusantara/src/Formatter/Tanggal.php';
+require __DIR__ . 'vendor/PHPNusantara/src/App/Bulan.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Tanggal.php';
 
 use PHPNusantara\Formatter\Tanggal;
 
@@ -425,7 +425,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Formatter/Terbilang.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Terbilang.php';
 
 use PHPNusantara\Formatter\Terbilang;
 
@@ -469,8 +469,8 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/App/Bulan.php';
-require 'vendor/PHPNusantara/src/Formatter/Waktu.php';
+require __DIR__ . 'vendor/PHPNusantara/src/App/Bulan.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Formatter/Waktu.php';
 
 use PHPNusantara\Formatter\Waktu;
 
@@ -514,7 +514,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Identity/Email.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Identity/Email.php';
 
 use PHPNusantara\Identity\Email;
 
@@ -560,7 +560,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Identity/Telepon.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Identity/Telepon.php';
 
 use PHPNusantara\Identity\Telepon;
 
@@ -607,7 +607,7 @@ src/
 
 ## 🚀 Cara Penggunaan PHP Native
 ```php
-require 'vendor/PHPNusantara/src/Identity/NIK.php';
+require __DIR__ . 'vendor/PHPNusantara/src/Identity/NIK.php';
 
 use PHPNusantara\Identity\NIK;
 
